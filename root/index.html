@@ -1,0 +1,42 @@
+---
+layout: default
+title: Home
+---
+<div class="container">
+    <h1
+    style="text-align: center; margin: 2rem auto; text-transform:capitalize;"
+    >user cards</h1>
+    <div class="grid">
+    </div>
+</div>
+<script>
+    (
+    async function(){
+        const res = await fetch('https://api.escuelajs.co/api/v1/users');
+        const data = await res.json();
+        const mainContainer=  document.querySelector('.grid');
+        data ? (
+            data.forEach((e)=>{
+                const card = document.createElement("div")
+                card.classList.add('card');
+                const material = `
+            <img src="${e.avatar}" alt="">
+            <h1>${e.name}</h1>
+            <p>${e.role}</p>
+            <div class="social-link">
+                <a href="#">Insta</a>
+                <a href="#">Face</a>
+                <a href="#">Twitter</a>
+            </div>
+                `;
+                card.innerHTML = material;
+                mainContainer.append(card);
+            })
+        ):(
+            mainContainer.innerHTML = "loading ..."
+        )
+        
+    }
+
+    )();
+</script>

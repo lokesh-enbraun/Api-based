@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="../assets/js/script.js"></script>
+    <link rel="stylesheet" href="../assets/css/core.css">
+</head>
+<body>  
+    <nav>
+    <ul>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+    </ul>
+</nav>
+        <div class="container">
+    <h1>User details table</h1>
+    <table border="1" class="table">
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>password</th>
+                <th>role</th>
+                <th>creationAt
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    (
+    async function(){
+        const res = await fetch('https://api.escuelajs.co/api/v1/users');
+        const data = await res.json();
+        const mainContainer=  document.querySelector('.table')
+        console.log(mainContainer.childNodes[1])
+        data.forEach((e)=>{
+            console.log(e)
+            const card = document.createElement("tr")
+            const material = `
+                <td>${e.id}</td>
+                <td>${e.name}</td>
+                <td>${e.email}</td>
+                <td>${e.password}</td>
+                <td>${e.role}</td>
+                <td>${e.creationAt}</td> `;
+            card.innerHTML = material;
+            mainContainer.append(card);
+        })
+    }
+
+    )();
+</script>
+</body>
+</html>
