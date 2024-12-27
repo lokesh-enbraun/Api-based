@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <script src="../assets/js/script.js"></script>
     <link rel="stylesheet" href="../assets/css/core.css">
 </head>
 <body>  
@@ -12,6 +11,9 @@
     <ul>
         <a href="/">Home</a>
         <a href="/about">About</a>
+        <a href="/data">data</a>
+        <a href="/adminAndCustomer">Admin/Customer</a>
+        <a href="/couting">Count</a>
     </ul>
 </nav>
         <div class="container">
@@ -39,9 +41,9 @@
         const res = await fetch('https://api.escuelajs.co/api/v1/users');
         const data = await res.json();
         const mainContainer=  document.querySelector('.table')
-        console.log(mainContainer.childNodes[1])
+
         data.forEach((e)=>{
-            console.log(e)
+
             const card = document.createElement("tr")
             const material = `
                 <td>${e.id}</td>
