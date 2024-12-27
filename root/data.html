@@ -3,10 +3,10 @@ layout: default
 title: data
 ---
 <div class="container">
-    <h1>Items are iterated by for loop</h1>
-    <ul>
-        {% for item in site.my_items %}
-          <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
+    {% include team.html %}
 </div>
+<ul>
+    {% for item in site.data.items %}
+      <li>{{ item }}</li>
+    {% endfor %}
+</ul>
