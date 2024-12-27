@@ -28,9 +28,9 @@ title: About
         const res = await fetch('https://api.escuelajs.co/api/v1/users');
         const data = await res.json();
         const mainContainer=  document.querySelector('.table')
-
+        console.log(mainContainer.childNodes[1])
         data.forEach((e)=>{
-
+            console.log(e)
             const card = document.createElement("tr")
             const material = `
                 <td>${e.id}</td>
