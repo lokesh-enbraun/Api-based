@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<div class="container">
+    <ol>
+        <li>
+            <hr>
+            <br>
+            <h1>text-overflow for Single-Line Truncation</h1>
+            <div class="truncate-single-line">
+                This is a long text that will be truncated with ellipsis if it overflows.
+            </div>
+            <br>
+            <hr>
+        </li>
+        <li>
+            <hr>
+            <br>
+            <h1>overflow and white-space for Multi-Line Truncation</h1>
+            <div class="truncate-multi-line">
+                This is a longer text block that will be truncated after a specific number of lines.
+                It should demonstrate how multi-line truncation works without using -webkit-line-clamp.
+              </div>              
+            <br>
+            <hr>
+        </li>
+        <li>
+            <hr>
+            <br>
+            <h1> CSS Grid/Box Tricks</h1>
+            <div class="flexbox-clamp">
+                This is a longer block of text that will be truncated after a few lines using flexbox and max-height.
+                It demonstrates how you can limit text display using CSS flexbox properties.
+              </div>                          
+            <br>
+            <hr>
+        </li>
+        <li>
+            <hr>
+            <br>
+            <h1>clamp() for Responsive Typography</h1>
+            <div class="responsive-text">
+                This text adjusts its size based on the viewport width, using the CSS clamp() function.
+              </div>                                        
+            <br>
+            <hr>
+        </li>
+        <li>
+            <hr>
+            <br>
+            <h1>. max-lines (Experimental)</h1>
+            <div class="max-lines-text">
+                This text demonstrates the use of the experimental max-lines property. Browser support is limited.
+              </div>                                                     
+            <br>
+            <hr>
+        </li>
+    </ol>
+    <p>Each example demonstrates a specific method for truncating or styling text, ranging from simple CSS techniques (text-overflow) to more advanced ones (-webkit-line-clamp, clamp()), as well as JavaScript-based solutions. Adjust the examples based on your requirements and browser support needs.</p>
+</div>

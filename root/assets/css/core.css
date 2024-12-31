@@ -8,7 +8,7 @@
 }
 nav{
     margin: 0.5rem auto;
-    width: 800px;
+    width: 900px;
     padding: 0.5rem 0;
     display: flex;
     align-items: center;
@@ -83,5 +83,44 @@ nav:hover{
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+  }
+  .truncate-single-line {
+    white-space: nowrap;      /* Prevent text wrapping */
+    overflow: hidden;         /* Hide overflowing text */
+    text-overflow: ellipsis;  /* Add "..." for truncated text */
+    width: 200px;             /* Set a fixed width */
+    border: 1px solid #ddd;   /* For visibility */
+  }
+  .truncate-multi-line {
+    display: block;           /* Block element */
+    max-height: 4.5em;        /* Limit to 3 lines (3 * line-height) */
+    overflow: hidden;         /* Hide extra text */
+    line-height: 1.5;         /* Set line height */
+    text-overflow: ellipsis;  /* Optional, adds "..." */
+    width: 300px;             /* Optional: Set width */
+    border: 1px solid #ddd;   /* For visibility */
+  }
+  .flexbox-clamp {
+    display: flex;
+    flex-direction: column;  /* Arrange text vertically */
+    overflow: hidden;        /* Hide overflow */
+    line-height: 1.5;        /* Set line height */
+    max-height: 4.5em;       /* Limit to 3 lines */
+    width: 300px;
+    border: 1px solid #ddd;
+  }
+  .responsive-text {
+    font-size: clamp(1rem, 2.5vw, 2rem); /* Dynamically adjust font size */
+    width: 300px;
+    line-height: 1.5;
+    border: 1px solid #ddd;
+  }
+  .max-lines-text {
+    overflow: hidden;             /* Hide overflowing text */
+    display: block;               /* Block element */
+    max-lines: 3;                 /* Limit to 3 lines */
+    block-overflow: ellipsis;     /* Truncate with "..." */
+    width: 300px;
+    border: 1px solid #ddd;
   }
   
