@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>^abc</title>
+    <link rel="stylesheet" href="../assets/css/core.css">
+    <script src="../assets/js/script.js" defer></script>
+</head>
+<body>  
+    <nav>
+    <ul>
+      
+        <a href="/">Home</a>
+      
+        <a href="/about.html">about</a>
+      
+        <a href="/data.html">data</a>
+      
+        <a href="/adminAndCustomer.html">adminAndCustomer</a>
+      
+        <a href="/couting.html">counting</a>
+      
+        <a href="/css.html">css</a>
+      
+        <a href="/regex.html">regex</a>
+      
+    </ul>
+</nav>
+        <div class="container">
+    <h1>JavaScript Regular Expression</h1>
+    <h2>Using [ ] to find a range of characters</h2>
+    <p>A global search for characters that are not "h":</p>
+ <pre>
+    <code>
+        <pre>
+            <code>
+            &lt;p id='demo'&gt;<p id="demo" style="display: inline;"></p>&lt;/p&gt;
+
+            let text = "Is this all there is?";
+
+            let pattern = /[^h]/g;
+
+            let result = text.match(pattern);
+
+            document.getElementById("demo").innerHTML = result;
+            
+            </code>
+        </pre>
+    </code>
+ </pre>
+</div>
+<script>
+    let text = "Is this all there is?";
+    let pattern = /[^h]/g;
+    let result = text.match(pattern);
+    document.getElementById("demo").innerHTML = result;
+</script>
+    <div class="container">
+        <a href="../regex.html" style="padding: 1rem; background-color: #24242450; border-radius: 10px; color: rgb(26, 26, 26);">go back</a>
+    </div>
+</body>
+</html>

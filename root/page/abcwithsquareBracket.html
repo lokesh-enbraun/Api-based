@@ -1,0 +1,33 @@
+---
+layout: pages
+title: [ abc ]
+---
+<div class="container">
+    <h1>JavaScript Regular Expression</h1>
+    <h2>Using [ ] to find a range of characters</h2>
+    <p>A global search for the character "h":</p>
+ <pre>
+    <code>
+        <pre>
+            <code>
+            &lt;p id='demo'&gt;<p id="demo" style="display: inline;"></p>&lt;/p&gt;
+
+            let text = "Is this all there is?";
+
+            let pattern = /[h]/g;
+
+            let result = text.match(pattern);
+
+            document.getElementById("demo").innerHTML = result;
+            
+            </code>
+        </pre>
+    </code>
+ </pre>
+</div>
+<script>
+    let text = "Is this all there is?";
+    let pattern = /[h]/g;
+    let result = text.match(pattern);
+    document.getElementById("demo").innerHTML = result;
+</script>
