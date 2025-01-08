@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubblingAndCapturing</title>
+    <link rel="stylesheet" href="../assets/css/core.css">
+    <script src="../assets/js/script.js" defer></script>
+</head>
+<body>  
+    <nav>
+    <ul>
+      
+        <a href="/">Home</a>
+      
+        <a href="/about.html">about</a>
+      
+        <a href="/data.html">data</a>
+      
+        <a href="/adminAndCustomer.html">adminAndCustomer</a>
+      
+        <a href="/couting.html">counting</a>
+      
+        <a href="/css.html">css</a>
+      
+        <a href="/regex.html">regex</a>
+      
+        <a href="/bubblingAndCapturing.html">BandC</a>
+      
+    </ul>
+</nav>
+        <h1>Bubble and Capture</h1>
+<p> what you want to see click below first before click on Root or children Nodes</p>
+<span id="captureAndBubble">
+    <button class="caputure">Caputure</button>
+    <button class="bubble">Bubble</button>
+    <button class="captureAndbubble">CaptureAndBubbleBoth</button>
+    <button class="bubbleAndcapture">BubbleAndCaptureBoth</button>
+</span>
+<div id="none" class="none">
+    To reverse the natural order of event propagation (bubbling followed by capturing), you can't change the internal event propagation mechanism because the DOM always executes the capturing phase first, followed by the bubbling phase. However, you can simulate this reversed behavior by delaying the execution of the capturing phase using setTimeout.
+</div>
+<div class="container">
+    <div class="root">
+        Root
+        <div class="sub-root">
+            Sub Root
+            <div class="children">
+                Children 
+               <div class="button">
+                    button 
+                    <button class="i_am_button">
+                        click here
+                    </button>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <a href="../regex.html" style="padding: 1rem; background-color: #24242450; border-radius: 10px; color: rgb(26, 26, 26);">go back</a>
+    </div>
+</body>
+</html>

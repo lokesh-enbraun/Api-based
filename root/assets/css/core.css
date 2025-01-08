@@ -8,8 +8,8 @@
 }
 nav{
     margin: 0.5rem auto;
-    width: 1200px;
     padding: 0.5rem 0;
+    font-size: 1.1  rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,6 +115,10 @@ nav:hover{
     line-height: 1.5;
     border: 1px solid #ddd;
   }
+  h1{
+    text-align: center;
+    margin: 2rem 0;
+  }
   .max-lines-text {
     overflow: hidden;             /* Hide overflowing text */
     display: block;               /* Block element */
@@ -130,3 +134,74 @@ nav:hover{
   .container pre:hover{
    color:tomato;
   }
+  p{
+    text-align: center;
+  }
+  #captureAndBubble{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  #captureAndBubble button{
+    outline: none;
+    border: none; 
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  #captureAndBubble button:hover,.container .root .sub-root .children .button button:hover{
+    background-color: #252525;
+    color: white;
+  }
+  .container .root{
+    padding: 4rem;
+    border: 2px solid red;
+    background-color: bisque;
+  }
+  #none{
+    background-color: rgba(128, 255, 0, 0.425);
+    color: crimson;
+    display: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    opacity: 1;
+    @starting-style {
+      opacity: 0.5;
+      transform: scale(0.5);
+    }
+  }
+  .container .root .sub-root{
+    padding: 4rem;
+    border: 2px solid rgb(4, 0, 255);
+    background-color: turquoise;
+  }
+  .container .root .sub-root .children{
+    padding: 4rem;
+    border: 2px solid red;
+    background-color: thistle;
+  }
+  #captureAndBubble button:hover,.container .root .sub-root .children .button{
+    padding: 4rem;
+    background-color: violet;
+    border-color: aliceblue;
+  }
+  .container .root .sub-root .children .button .i_am_button{
+    outline: none;
+    border:2px solid rgb(206, 51, 77) ;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  

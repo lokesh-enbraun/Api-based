@@ -12,3 +12,5 @@
   link: /css.html
 - name: regex
   link: /regex.html
+- name: BandC
+  link: /bubblingAndCapturing.html

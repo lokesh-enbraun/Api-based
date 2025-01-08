@@ -1,0 +1,32 @@
+---
+layout: pages
+title: bubblingAndCapturing
+---
+<h1>Bubble and Capture</h1>
+<p> what you want to see click below first before click on Root or children Nodes</p>
+<span id="captureAndBubble">
+    <button class="caputure">Caputure</button>
+    <button class="bubble">Bubble</button>
+    <button class="captureAndbubble">CaptureAndBubbleBoth</button>
+    <button class="bubbleAndcapture">BubbleAndCaptureBoth</button>
+</span>
+<div id="none" class="none">
+    To reverse the natural order of event propagation (bubbling followed by capturing), you can't change the internal event propagation mechanism because the DOM always executes the capturing phase first, followed by the bubbling phase. However, you can simulate this reversed behavior by delaying the execution of the capturing phase using setTimeout.
+</div>
+<div class="container">
+    <div class="root">
+        Root
+        <div class="sub-root">
+            Sub Root
+            <div class="children">
+                Children 
+               <div class="button">
+                    button 
+                    <button class="i_am_button">
+                        click here
+                    </button>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
