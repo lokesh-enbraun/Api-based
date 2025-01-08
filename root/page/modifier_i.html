@@ -1,0 +1,34 @@
+---
+layout: pages
+title: Example of Modifier i
+---
+<div class="container">
+    <h1>JavaScript Regular Expression</h1>
+    <h2>The i Modifier</h2>
+    
+    <p>Perform a case-insenitive match:</p>
+ <pre>
+    <code>
+        <pre>
+            <code>
+            &lt;p id='demo'&gt;<p id="demo" style="display: inline;"></p>&lt;/p&gt;
+
+            let text = "Visit W3Schools";
+
+            let pattern = /w3schools/i;
+
+            let result = text.match(pattern);
+
+            document.getElementById("demo").innerHTML = result;
+            
+            </code>
+        </pre>
+    </code>
+ </pre>
+</div>
+<script>
+    let text = "Visit W3Schools";
+    let pattern = /w3schools/i;
+    let result = text.match(pattern);
+    document.getElementById("demo").innerHTML = result;
+</script>

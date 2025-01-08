@@ -1,0 +1,16 @@
+- name: Home
+  link: /
+- name: about
+  link: /about.html
+- name: data
+  link: /data.html
+- name: adminAndCustomer
+  link: /adminAndCustomer.html
+- name: counting
+  link: /couting.html
+- name: css
+  link: /css.html
+- name: regex
+  link: /regex.html
+- name: BandC
+  link: /bubblingAndCapturing.html

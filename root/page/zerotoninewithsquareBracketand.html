@@ -1,0 +1,34 @@
+---
+layout: pages
+title: [ 0-9 ]
+---
+<div class="container">
+    <h1>JavaScript Regular Expression</h1>
+    <h2>Using [ ] to find a range of characters</h2>
+    <p>A global search for the numbers 1 to 4:</p>
+ <pre>
+    <code>
+        <pre>
+            <code>
+            &lt;p id='demo'&gt;<p id="demo" style="display: inline;"></p>&lt;/p&gt;
+
+            let text = "123456789";
+
+            let pattern = /[1-4]/g;
+
+            let result = text.match(pattern);
+
+            document.getElementById("demo").innerHTML = result;
+            
+            </code>
+        </pre>
+    </code>
+ </pre>
+</div>
+<script>
+    let text = "123456789";
+    let pattern = /[1-4]/g;
+    let result = text.match(pattern);
+    document.getElementById("demo").innerHTML = result;
+</script>
+    
